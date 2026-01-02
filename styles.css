@@ -1,5 +1,4 @@
-
-/* ========= OcéNet — Thème ========= */
+/* ========= OcéNet – Thème ========= */
 :root{
   /* Palette extraite du logo OcéNet */
   --primary:#1671c2;      /* bleu principal (cercle) */
@@ -57,14 +56,26 @@ img{max-width:100%; display:block}
 .top-contact .contact-link{color:var(--primary-dark);text-decoration:none}
 .top-contact .dot{opacity:.4}
 
-/* Hero */
+/* Hero - MODIFIÉ POUR CENTRAGE */
 .hero{
   padding:64px 0;
   background:linear-gradient(180deg, rgba(22,113,194,.08), #fff);
 }
+
+.hero .container.grid.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .container.grid.two > div {
+  max-width: 700px;
+  text-align: center;
+}
+
 .hero h1{font-size:2.2rem;margin:0 0 12px;color:var(--primary-dark)}
 .lead{font-size:1.1rem;color:#243b53}
-.actions{margin-top:18px}
+.actions{margin-top:18px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;}
 .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none}
 .btn.primary{background:var(--primary);color:var(--white);font-weight:700}
 .btn.ghost{border:2px solid var(--primary);color:var(--primary);font-weight:600;background:transparent}
@@ -72,10 +83,9 @@ img{max-width:100%; display:block}
 /* Logos partenaires */
 .trust {
   margin-top: 26px;
-
   display: flex;
   flex-direction: column;
-  align-items: center; /* centre tout le contenu */
+  align-items: center;
 }
 
 .trust-title {
@@ -86,7 +96,7 @@ img{max-width:100%; display:block}
 
 .logos {
   display: flex;
-  justify-content: center; /* centre les logos */
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
