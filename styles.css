@@ -70,10 +70,32 @@ img{max-width:100%; display:block}
 .btn.ghost{border:2px solid var(--primary);color:var(--primary);font-weight:600;background:transparent}
 
 /* Logos partenaires */
-.trust{margin-top:26px;justify-content: center; /* horizontal */}
-.trust-title{color:var(--muted);font-weight:600}
-.logos{display:flex;gap:20px;flex-wrap:wrap}
-.logos img{height:28px;opacity:.8;filter:grayscale(30%)}
+.trust {
+  margin-top: 26px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre tout le contenu */
+}
+
+.trust-title {
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center; /* centre les logos */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  height: 28px;
+  opacity: .8;
+  filter: grayscale(30%);
+}
 
 /* Media */
 .hero-media img, .card img, .gallery img{width:100%;height:auto;border-radius:14px}
