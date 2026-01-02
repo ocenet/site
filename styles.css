@@ -212,9 +212,26 @@ img{max-width:100%; display:block}
 /* Pictos */
 .picto{width:84px;height:auto;display:block;margin-bottom:8px}
 
-/* Réalisations */
-.realisations{padding:48px 0}
-.gallery img{border:1px solid #eee}
+* Section réalisations */
+.realisations {
+  padding: 48px 0;
+  text-align: center; /* centre le texte comme le h2 */
+}
+
+/* Galerie */
+.gallery {
+  display: flex;            /* active flexbox */
+  justify-content: center;  /* centre horizontalement les images */
+  gap: 16px;                /* espace entre les images */
+  flex-wrap: wrap;          /* permet aux images de passer à la ligne si écran petit */
+}
+
+/* Images */
+.gallery img {
+  border: 1px solid #eee;
+  max-width: 100%;          /* pour que les images restent responsives */
+  height: auto;
+}
 
 /* Avis */
 .avis{padding:48px 0;background:var(--light)}
